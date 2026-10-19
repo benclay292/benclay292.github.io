@@ -2,42 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-    <style>
-    body {
-        background-color: #f4f4f9;
-        color: #333333;
-        font-family: Arial, sans-serif;
-    }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
 </head>
 <body>
 
-    <h1>Addition</h1>
-    <label for="first_number">First Number</label>
-    <input type="number" id="first_number">
-    <label for="second_number">Second Number</label>
-    <input type="number" id="second_number">
-    
-    <button id="calc_btn">Calculate</button>
-    <h3 id="result">Result: 0.0</h3>
-<br>
-<br>
-<br>
-<h3>A Nice Picture of Charles</h3>
-<img src="IMG_4593.JPG" alt="A nice picture of Charles" width="400">
+    <h1>Gradient Matching</h1>
+    <p>This is a paragraph of text placed underneath the heading. You can write your content here!</p>
 
-    <script type="py">
-        from pyscript import document, when
-        @when("click", "#calc_btn")
-        def add_numbers(event):
-            input1 = document.querySelector("#first_number").value
-            input2 = document.querySelector("#second_number").value
-            val1 = float(input1) if input1 else 0.0
-            val2 = float(input2) if input2 else 0.0
-            document.querySelector("#result").innerText = f"Result: {val1+val2}"
-    </script>
 </body>
 </html>
